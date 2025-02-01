@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Inex project code style checker config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../vendor/squizlabs/php_codesniffer/phpcs.xsd">
+    <rule ref="../laravel.phpcs.xml"></rule>
+    <exclude-pattern>/app/Enums/*</exclude-pattern>
+    <exclude-pattern>/tests/Testing/*</exclude-pattern>
+</ruleset>

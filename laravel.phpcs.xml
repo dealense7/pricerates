@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="laravel-php-code-style" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
+    <description>Laravel PHP Code Style preset</description>
+
+    <rule ref="./code-styles.phpcs.xml" />
+
+    <rule ref="PSR1.Methods.CamelCapsMethodName.NotCamelCaps">
+        <exclude-pattern>/tests/*</exclude-pattern>
+        <exclude-pattern>/app/Models/*</exclude-pattern>
+    </rule>
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <exclude-pattern>/database/schema/*</exclude-pattern>
+        <exclude-pattern>/database/migrations/*</exclude-pattern>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedCatch">
+        <exclude-pattern>*/*</exclude-pattern>
+    </rule>
+    <rule ref="PEAR.Functions.ValidDefaultValue.NotAtEnd">
+        <exclude-pattern>/app/Http/*</exclude-pattern>
+    </rule>
+
+    <!--
+      Disallows to complex function determined by the cyclomatic complexity
+      (McCabe, http://en.wikipedia.org/wiki/Cyclomatic_complexity) of that function.
+    -->
+    <rule ref="Generic.Metrics.CyclomaticComplexity">
+        <properties>
+            <property name="complexity" value="6"/>
+            <property name="absoluteComplexity" value="10"/>
+        </properties>
+    </rule>
+
+    <!--
+      Defines a maximum $nestingLevel and $absoluteNestingLevel for functions.
+    -->
+    <rule ref="Generic.Metrics.NestingLevel">
+        <properties>
+            <property name="nestingLevel" value="6"/>
+            <property name="absoluteNestingLevel" value="10"/>
+        </properties>
+    </rule>
+
+    <!--
+      Extra rules from https://github.com/slevomat/coding-standard
+    -->
+    <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly">
+        <exclude-pattern>/app/Exceptions/Handler.php</exclude-pattern>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
+        <properties>
+            <property name="rootNamespaces" type="array">
+                <element key="app" value="App"/>
+                <element key="database/factories" value="Database\Factories"/>
+                <element key="database/seeders" value="Database\Seeders"/>
+                <element key="tests" value="Tests"/>
+            </property>
+        </properties>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
+        <exclude-pattern>/database/schema/*</exclude-pattern>
+        <exclude-pattern>/database/migrations/*</exclude-pattern>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
+
+    <rule ref="Generic.Metrics.CyclomaticComplexity">
+        <properties>
+            <property name="complexity" value="20"/>
+            <property name="absoluteComplexity" value="40"/>
+        </properties>
+    </rule>
+    <rule ref="Generic.Metrics.CyclomaticComplexity.TooHigh">
+        <type>warning</type>
+    </rule>
+
+    <rule ref="Generic.Metrics.CyclomaticComplexity.MaxExceeded">
+        <type>warning</type>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.Classes.ClassStructure">
+        <exclude-pattern>/tests/*</exclude-pattern>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition"/>
+
+    <exclude-pattern>*\.blade\.php$</exclude-pattern>
+</ruleset>
