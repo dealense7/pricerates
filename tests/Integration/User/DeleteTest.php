@@ -25,7 +25,7 @@ it('should raise not found error', function () {
 
 it('should raise forbidden on permission', function () {
     ProvidesTestingData::createRandomUserAndAuthorize([], [
-        'permissions' => $this->getPermissions(['read', 'read_everyone']),
+        'permissions' => $this->getPermissions(['read']),
     ]);
 
     $user = ProvidesTestingData::createRandomUsers()->first();
@@ -37,7 +37,7 @@ it('should raise forbidden on permission', function () {
 
 it('should raise not found on suicide', function () {
     $user = ProvidesTestingData::createRandomUserAndAuthorize([], [
-        'permissions' => $this->getPermissions(['delete', 'read', 'read_everyone']),
+        'permissions' => $this->getPermissions(['delete', 'read']),
     ]);
 
     $response = $this->jsonWithHeader('DELETE', $this->url('users/' . $user->getId()));
@@ -47,7 +47,7 @@ it('should raise not found on suicide', function () {
 
 it('should delete user', function () {
     $mainUser = ProvidesTestingData::createRandomUserAndAuthorize([], [
-        'permissions' => $this->getPermissions(['delete', 'read', 'read_everyone']),
+        'permissions' => $this->getPermissions(['delete', 'read']),
     ]);
 
     $user = ProvidesTestingData::createRandomUsers()->first();

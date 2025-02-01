@@ -17,7 +17,7 @@ it('should raise unauthorized', function () {
 
 
 it('should return list', function () {
-    $user = ProvidesTestingData::createRandomUserAndAuthorize([], ['permissions' => $this->getPermissions(['read', 'read_everyone'])]);
+    $user = ProvidesTestingData::createRandomUserAndAuthorize([], ['permissions' => $this->getPermissions(['read'])]);
 
     /** @var \App\Models\Acl\Role $role */
     $role              = ProvidesTestingData::createRoleRandomItem()->first();

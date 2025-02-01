@@ -22,9 +22,6 @@ class PermissionSeeder extends Seeder
                 'update'        => ['display_name' => 'რედაქტირება'],
                 'delete'        => ['display_name' => 'წაშლა'],
                 'restore'       => ['display_name' => 'აღდგენა'],
-                'deactivate'    => ['display_name' => 'დეაქტივაცია'],
-                'activate'      => ['display_name' => 'აქტივაცია'],
-                'read_everyone' => ['display_name' => 'ყველას ნახვა'],
             ],
         ],
         Role::PERMISSIONS_SCOPE => [

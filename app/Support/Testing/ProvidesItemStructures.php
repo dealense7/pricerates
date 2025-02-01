@@ -40,17 +40,6 @@ trait ProvidesItemStructures
         ],
     ];
 
-    private array $company_structure = [
-        'type',
-        'id',
-        'attributes' => [
-            'name',
-            'displayName',
-            'createdAt',
-            'updatedAt',
-        ],
-    ];
-
     private array $user_structure = [
         'type',
         'id',
@@ -165,15 +154,6 @@ trait ProvidesItemStructures
     public function getLanguageStructure(array $relations = []): array
     {
         $structure = $this->language_structure;
-
-        $this->includeNestedRelations($structure, $relations);
-
-        return $structure;
-    }
-
-    public function getCompanyStructure(array $relations = []): array
-    {
-        $structure = $this->company_structure;
 
         $this->includeNestedRelations($structure, $relations);
 

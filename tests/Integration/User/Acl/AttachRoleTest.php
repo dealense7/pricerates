@@ -39,35 +39,10 @@ it('should raise not found', function () {
     $response->assertNotFound();
 });
 
-it('should raise not found on user from other company', function () {
-    /** @var \App\Models\Client\Company $company */
-    $company = ProvidesTestingData::createCompanyRandomItem()->first();
-    ProvidesTestingData::createRandomUserAndAuthorize(
-        ['company_id' => $company->id,],
-        ['permissions' => $this->getPermissions(['read']),],
-    );
-
-    $roles = ProvidesTestingData::createRoleRandomItem();
-
-    $data = [
-        'roles' => $roles->pluck('id')->toArray(),
-    ];
-
-    /** @var \App\Models\User\User $user */
-    $user = ProvidesTestingData::createRandomUsers()->first();
-
-    $response = $this->jsonWithHeader('PUT', $this->url('users/' . $user->getId() . '/roles'), $data);
-
-    $response->assertNotFound();
-});
-
 it('should raise forbidden', function () {
-
-    /** @var \App\Models\Client\Company $company */
-    $company = ProvidesTestingData::createCompanyRandomItem()->first();
     ProvidesTestingData::createRandomUserAndAuthorize(
-        ['company_id' => $company->id,],
-        ['permissions' => $this->getPermissions(['read']),],
+        [],
+        ['permissions' => $this->getPermissions(['read'])],
     );
 
     $roles = ProvidesTestingData::createRoleRandomItem();
@@ -75,9 +50,7 @@ it('should raise forbidden', function () {
     $data = ['roles' => $roles->pluck('id')->toArray(),];
 
     /** @var \App\Models\User\User $user */
-    $user = ProvidesTestingData::createRandomUsers([
-        'company_id' => $company->id,
-    ])->first();
+    $user = ProvidesTestingData::createRandomUsers()->first();
 
     $response = $this->jsonWithHeader('PUT', $this->url('users/' . $user->getId() . '/roles'), $data);
 
@@ -86,7 +59,7 @@ it('should raise forbidden', function () {
 
 it('should sync roles', function () {
     ProvidesTestingData::createRandomUserAndAuthorize([], [
-        'permissions' => $this->getPermissions(['read', 'read_everyone', 'update']),
+        'permissions' => $this->getPermissions(['read', 'update']),
     ]);
 
     /** @var \App\Models\Acl\Role $newRole */

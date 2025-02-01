@@ -11,10 +11,6 @@ class UserPolicy extends Policy
 {
     public function read(User $user, User $item): Response
     {
-        if ($user->getCompanyId() === null && ! $user->can($item->getPermission('read_everyone'))) {
-            return $this->denyWithCustomMessage("If you don't have company, then you need permission called `read_everyone`");
-        }
-
         if ($user->can($item->getPermission('read'))) {
             return $this->allow();
         }

@@ -25,7 +25,7 @@ it('should raise not found error', function () {
 
 it('should raise forbidden', function () {
     ProvidesTestingData::createRandomUserAndAuthorize([], [
-        'permissions' => $this->getPermissions(['read', 'read_everyone']),
+        'permissions' => $this->getPermissions(['read']),
     ]);
 
     /** @var \App\Models\User\User $user */
@@ -40,7 +40,7 @@ it('should raise forbidden', function () {
 
 it('should delete user', function () {
     $mainUser = ProvidesTestingData::createRandomUserAndAuthorize([], [
-        'permissions' => $this->getPermissions(['restore', 'read', 'read_everyone']),
+        'permissions' => $this->getPermissions(['restore', 'read']),
     ]);
 
     /** @var \App\Models\User\User $user */

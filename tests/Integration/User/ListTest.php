@@ -24,51 +24,18 @@ it('should raise forbidden on return items list for permission', function () {
     $response->assertForbidden();
 });
 
-it('should raise forbidden if can not see everyone and has no company', function () {
-    ProvidesTestingData::createRandomUserAndAuthorize([], ['permissions' => $this->getPermissions(['read'])]);
-    $response = $this->jsonWithHeader('GET', $this->url('users'));
 
-    $response->assertForbidden();
-});
-
-it('it should return list of only company colleagues', function () {
-    /** @var \App\Models\Client\Company $company */
-    $company = ProvidesTestingData::createCompanyRandomItem()->first();
-
+it('it should return list of everyone', function () {
     ProvidesTestingData::createRandomUserAndAuthorize(
-        ['company_id' => $company->getId(),],
+        [],
         ['permissions' => $this->getPermissions(['read'])],
     );
-    // Same company guy
-    ProvidesTestingData::createRandomUsers(['company_id' => $company->getId()]);
-    // Different company guy
+
     ProvidesTestingData::createRandomUsers();
 
     $response = $this->jsonWithHeader('GET', $this->url('users'));
 
     $response->assertJsonDataCount(2);
-
-    $response->assertJsonDataCollectionStructure($this->getUserStructure([
-        'company',
-    ]));
-});
-
-it('it should return list of everyone', function () {
-    /** @var \App\Models\Client\Company $company */
-    $company = ProvidesTestingData::createCompanyRandomItem()->first();
-
-    ProvidesTestingData::createRandomUserAndAuthorize(
-        ['company_id' => $company->getId(),],
-        ['permissions' => $this->getPermissions(['read', 'read_everyone'])],
-    );
-    // Same company guy
-    ProvidesTestingData::createRandomUsers(['company_id' => $company->getId()]);
-    // Different company guy
-    ProvidesTestingData::createRandomUsers();
-
-    $response = $this->jsonWithHeader('GET', $this->url('users'));
-
-    $response->assertJsonDataCount(3);
 
     $response->assertJsonDataCollectionStructure($this->getUserStructure());
 });
@@ -76,7 +43,7 @@ it('it should return list of everyone', function () {
 it('should return items list', function (array $data) {
     ProvidesTestingData::createRandomUserAndAuthorize(
         [],
-        ['permissions' => $this->getPermissions(['read', 'read_everyone'])],
+        ['permissions' => $this->getPermissions(['read'])],
     );
 
     $data['dataCallback']();
@@ -155,7 +122,7 @@ dataset('dataForListing', static function () {
 it('should raise validation error on list for max per page data', function () {
     ProvidesTestingData::createRandomUserAndAuthorize(
         [],
-        ['permissions' => $this->getPermissions(['read', 'read_everyone'])],
+        ['permissions' => $this->getPermissions(['read'])],
     );
 
     $requestData = [

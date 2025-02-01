@@ -24,6 +24,10 @@ class Role extends BaseRole implements TransformableContract
 
     public const PERMISSIONS_SCOPE = 'roles';
 
+    protected $casts = [
+        'is_custom' => 'boolean',
+    ];
+
     protected $perPage = 25;
     protected int $maxPerPage = 100;
 

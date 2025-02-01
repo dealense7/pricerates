@@ -46,7 +46,7 @@ it('should raise forbidden', function () {
 
 it('should sync permissions', function () {
     ProvidesTestingData::createRandomUserAndAuthorize([], [
-        'permissions' => $this->getPermissions(['read', 'read_everyone', 'update']),
+        'permissions' => $this->getPermissions(['read', 'update']),
     ]);
 
     /** @var \App\Models\User\User $newPermission */

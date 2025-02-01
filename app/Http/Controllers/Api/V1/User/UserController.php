@@ -27,9 +27,7 @@ class UserController extends ApiController
         $page      = $this->getInputPage();
         $perPage   = $this->getInputPerPage();
         $sort      = $this->getInputSort();
-        $relations = [
-            'company',
-        ];
+        $relations = [];
 
         $items = $service->findItems($filters, $relations, $page, $perPage, $sort);
 
@@ -43,7 +41,6 @@ class UserController extends ApiController
     public function show(int $id, UserServiceContract $service): JsonResponse
     {
         $relations = [
-            'company',
             'contactInformation',
         ];
 

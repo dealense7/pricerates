@@ -6,7 +6,6 @@ namespace App\Support\Testing;
 
 use App\Models\Acl\Permission;
 use App\Models\Acl\Role;
-use App\Models\Client\Company;
 use App\Models\User\ContactInformation;
 use App\Models\User\User;
 use Faker\Factory;
@@ -84,11 +83,6 @@ class ProvidesTestingData
         }
 
         return $users;
-    }
-
-    public static function createCompanyRandomItem(array $params = [], int $count = 1): Collection
-    {
-        return Company::factory()->count($count)->create($params);
     }
 
     public static function createContactInformationRandomItem(array $params = [], int $count = 1): Collection

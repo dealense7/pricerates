@@ -35,7 +35,7 @@ it('should raise forbidden on return items list for permission', function () {
 });
 
 it('should return list', function () {
-    ProvidesTestingData::createRandomUserAndAuthorize([], ['permissions' => $this->getPermissions(['read', 'read_everyone'])],);
+    ProvidesTestingData::createRandomUserAndAuthorize([], ['permissions' => $this->getPermissions(['read'])],);
 
     /** @var \App\Models\User\User $user */
     $user = ProvidesTestingData::createRandomUsers()->first();

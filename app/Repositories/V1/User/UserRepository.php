@@ -6,7 +6,6 @@ namespace App\Repositories\V1\User;
 
 use App\Contracts\Repositories\User\UserRepositoryContract;
 use App\Filters\FilterByName;
-use App\Filters\General\FilterByCompanyId;
 use App\Models\User\User;
 use App\Repositories\Repository;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
@@ -117,7 +116,6 @@ class UserRepository extends Repository implements UserRepositoryContract
     {
         return [
             FilterByName::class,
-            FilterByCompanyId::class,
         ];
     }
 }

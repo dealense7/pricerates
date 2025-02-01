@@ -39,19 +39,12 @@ class UserService extends Service implements UserServiceContract
     ): LengthAwarePaginator {
         $this->authorize('read', new User());
 
-        if (! Helper::user()->can(User::PERMISSIONS_SCOPE . '.read_everyone')) {
-            $filters['company_id'] = Helper::user()->getCompanyId();
-        }
-
         return $this->repository->findItems($filters, $relations, $page, $perPage, $sort);
     }
 
     public function findById(int $id, array $relations = []): ?User
     {
         $filters = [];
-        if (! Helper::user()->can(User::PERMISSIONS_SCOPE . '.read_everyone')) {
-            $filters['company_id'] = Helper::user()->getCompanyId();
-        }
 
         $item = $this->repository->findById($id, $relations, $filters);
 
@@ -87,9 +80,7 @@ class UserService extends Service implements UserServiceContract
             $phoneNumber = $data['phoneNumber'];
 
             $data             = UserResource::transformToInternal($data);
-            if (! is_null(Helper::user()->getCompanyId())) {
-                $data['company_id'] = Helper::user()->getCompanyId();
-            }
+
             $data['password'] = Hash::make($passwordPlainText);
 
             $user = $this->repository->store($data, $relations);

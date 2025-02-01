@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\Models\User;
 
 use App\Contracts\Models\User\UserContract;
-use App\Models\Client\Company;
 use App\Models\Model;
 use App\Support\Traits\UserHasPermissions;
 use App\Support\Traits\UserIdentities;
@@ -14,7 +13,6 @@ use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\Access\Authorizable;
@@ -28,10 +26,7 @@ use Laravel\Passport\HasApiTokens;
  * @property string last_name
  * @property string email
  * @property integer region_id
- * @property integer company_id
- * @property Carbon deactivated_at
  * @property boolean uses_otp_check
- * @property string deactivation_reason
  */
 class User extends Model implements AuthenticatableContract, AuthorizableContract, CanResetPasswordContract, UserContract
 {
@@ -56,7 +51,6 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
         'first_name',
         'last_name',
         'region_id',
-        'company_id',
         'email',
         'password',
         'uses_otp_check',
@@ -98,11 +92,6 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
         return $this->region_id;
     }
 
-    public function getCompanyId(): ?int
-    {
-        return $this->company_id;
-    }
-
     public function getUsesOtpCheck(): bool
     {
         return $this->uses_otp_check;
@@ -128,23 +117,16 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
         return $this->deactivated_at?->format('Y-m-d H:i:s');
     }
 
-    public function company(): BelongsTo
-    {
-        return $this->belongsTo(Company::class, 'company_id');
-    }
-
     protected function casts(): array
     {
         return [
-            'username'            => 'string',
-            'first_name'          => 'string',
-            'last_name'           => 'string',
-            'region_id'           => 'integer',
-            'company_id'          => 'integer',
-            'deactivated_at'      => 'datetime',
-            'deactivation_reason' => 'string',
-            'email_verified_at'   => 'datetime',
-            'password'            => 'hashed',
+            'username'          => 'string',
+            'first_name'        => 'string',
+            'last_name'         => 'string',
+            'region_id'         => 'integer',
+            'uses_otp_check'    => 'boolean',
+            'email_verified_at' => 'datetime',
+            'password'          => 'hashed',
         ];
     }
 }
