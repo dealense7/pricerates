@@ -16,7 +16,7 @@ class CategorySeeder extends Seeder
     {
         $items = Category::toCollection();
 
-        /** @var Category $item */
+        /** @var \App\Enums\General\Category $item */
         foreach ($items as $item) {
             CategoryModel::query()->updateOrInsert(
                 [
@@ -25,7 +25,7 @@ class CategorySeeder extends Seeder
                 [
                     'name' => $item->getText(),
                     'slug' => strtolower($item->name),
-                ]
+                ],
             );
         }
 

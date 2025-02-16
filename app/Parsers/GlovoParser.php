@@ -1,27 +1,19 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Parsers;
 
 use App\Enums\General\Category;
 use App\Enums\General\Provider;
+use Faker\Factory as Faker;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
 use Spatie\Browsershot\Browsershot;
-use Faker\Factory as Faker;
 
 class GlovoParser extends Parser
 {
-    protected function getProviderId(): int
-    {
-        return Provider::Glovo->value;
-    }
-
-    protected function setStoreId(int $storeId): void
-    {
-        $this->storeId = $storeId;
-    }
-
     public function parse(...$args): void
     {
         $this->setStoreId($args['storeId']);
@@ -39,8 +31,56 @@ class GlovoParser extends Parser
                 $this->storeItems($items);
             }
         }
+    }
 
+    protected function getProviderId(): int
+    {
+        return Provider::Glovo->value;
+    }
 
+    protected function setStoreId(int $storeId): void
+    {
+        $this->storeId = $storeId;
+    }
+
+    protected function getName(array $item): string
+    {
+        return Arr::get($item, 'data.name');
+    }
+
+    protected function getPrice(array $item): int
+    {
+        return ((float) Arr::get($item, 'data.price')) * 100;
+    }
+
+    protected function getBarCode(array $item): string
+    {
+        return (int) filter_var(Arr::get($item, 'data.externalId'), FILTER_SANITIZE_NUMBER_INT);
+    }
+
+    protected function getBarCodeFromName(array $item): string
+    {
+        $array = explode('/', Arr::get($item, 'data.name', ''));
+
+        return (int) filter_var(end($array), FILTER_SANITIZE_NUMBER_INT);
+    }
+
+    protected function getBarCodeFromImage(array $item): ?string
+    {
+
+        $url = Arr::get($item, 'data.imageUrl', '');
+
+        if (preg_match('/_(\d+)\.jpg$/', $url, $matches)) {
+            $barcode = $matches[1];
+            echo $barcode; // Output: 4860103352088
+        }
+
+        return null;
+    }
+
+    protected function getImageUrl(array $item): ?string
+    {
+        return Arr::get($item, 'data.imageUrl');
     }
 
     private function getApiUrls(string $url, array $categories): array
@@ -114,40 +154,5 @@ class GlovoParser extends Parser
         }
 
         return $items;
-    }
-
-    protected function getName(array $item): string
-    {
-        return Arr::get($item, 'data.name');
-    }
-
-    protected function getPrice(array $item): int
-    {
-        return ((float)Arr::get($item, 'data.price')) * 100;
-    }
-
-    protected function getBarCode(array $item): string
-    {
-        return (int) filter_var(Arr::get($item, 'data.externalId'), FILTER_SANITIZE_NUMBER_INT);
-    }
-
-    protected function getBarCodeFromName(array $item): string
-    {
-        $array = explode('/', Arr::get($item, 'data.name', ''));
-
-        return (int) filter_var(end($array), FILTER_SANITIZE_NUMBER_INT);
-    }
-
-    protected function getBarCodeFromImage(array $item): ?string
-    {
-
-        $url = Arr::get($item, 'data.imageUrl', '');
-
-        if (preg_match('/_(\d+)\.jpg$/', $url, $matches)) {
-            $barcode = $matches[1];
-            echo $barcode; // Output: 4860103352088
-        }
-
-        return null;
     }
 }

@@ -5,8 +5,10 @@ declare(strict_types=1);
 namespace App\Models\Products;
 
 use App\Models\General\Category;
+use App\Models\General\File;
 use App\Models\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
 /**
  * @property int id
@@ -30,6 +32,7 @@ class Item extends Model
         'show',
         'unit_type',
         'unit',
+        'has_image',
     ];
 
     protected $casts = [
@@ -40,6 +43,7 @@ class Item extends Model
         'barcode'         => 'string',
         'category_id'     => 'integer',
         'show'            => 'boolean',
+        'has_image'       => 'boolean',
     ];
 
     public function getId(): int
@@ -70,5 +74,10 @@ class Item extends Model
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class, 'category_id');
+    }
+
+    public function files(): MorphToMany
+    {
+        return $this->morphToMany(File::class, 'fileable');
     }
 }

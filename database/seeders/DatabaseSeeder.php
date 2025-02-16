@@ -11,6 +11,7 @@ use App\Models\User\ContactInformation;
 use App\Models\User\User;
 use Database\Seeders\Acl\PermissionSeeder;
 use Database\Seeders\Acl\RoleSeeder;
+use Database\Seeders\Currency\CurrencySeeder;
 use Database\Seeders\General\CategorySeeder;
 use Database\Seeders\General\ProviderSeeder;
 use Database\Seeders\Store\StoreSeeder;
@@ -37,6 +38,10 @@ class DatabaseSeeder extends Seeder
             ProviderSeeder::class,
             StoreSeeder::class,
             CategorySeeder::class,
+
+            //Currency
+            Currency\ProviderSeeder::class,
+            CurrencySeeder::class,
         ]);
 
         $moderator = User::factory()->create([
