@@ -8,22 +8,16 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::table('product_items', function (Blueprint $table) {
-            $table->string('unit_type')->nullable();
-            $table->string('unit')->nullable();
-            $table->string('display_name')->nullable();
-            $table->string('brand_name')->nullable();
+            $table->renameColumn('display_name', 'display_name_ka');
+            $table->string('display_name_en')->nullable();
         });
     }
 
     public function down(): void
     {
         Schema::table('product_items', function (Blueprint $table) {
-            $table->dropcolumn([
-                'unit_type',
-                'display_name',
-                'brand_name',
-                'unit',
-            ]);
+            $table->renameColumn('display_name_ka', 'display_name');
+            $table->dropColumn(['display_name_en']);
         });
     }
 };

@@ -22,6 +22,8 @@ class Item extends Model
 
     protected $fillable = [
         'name',
+        'display_name_ka',
+        'display_name_en',
         'slug',
         'barcode',
         'category_id',
@@ -31,11 +33,13 @@ class Item extends Model
     ];
 
     protected $casts = [
-        'name'        => 'string',
-        'slug'        => 'string',
-        'barcode'     => 'string',
-        'category_id' => 'integer',
-        'show'        => 'boolean',
+        'name'            => 'string',
+        'display_name_ka' => 'string',
+        'display_name_en' => 'string',
+        'slug'            => 'string',
+        'barcode'         => 'string',
+        'category_id'     => 'integer',
+        'show'            => 'boolean',
     ];
 
     public function getId(): int

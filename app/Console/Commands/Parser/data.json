@@ -1,0 +1,1602 @@
+[
+    {
+        "id": 1533,
+        "name_en": "Kotany - black peppercorn",
+        "name_ka": "კოტანი - შავი პილპილი მარცვალი",
+        "unit": "20",
+        "unit_type": "g",
+        "brand": "Kotany"
+    },
+    {
+        "id": 1534,
+        "name_en": "Kotany - ground black pepper",
+        "name_ka": "კოტანი - შავი პილპილი დაფქული",
+        "unit": "20",
+        "unit_type": "g",
+        "brand": "Kotany"
+    },
+    {
+        "id": 1539,
+        "name_en": "Yamuna - ground pepper",
+        "name_ka": "yamuna - პილპილი დაფქული",
+        "unit": "50",
+        "unit_type": "g",
+        "brand": "Yamuna"
+    },
+    {
+        "id": 1540,
+        "name_en": "Yamuna - ground pepper",
+        "name_ka": "yamuna - პილპილი დაფქული",
+        "unit": "10",
+        "unit_type": "g",
+        "brand": "Yamuna"
+    },
+    {
+        "id": 1541,
+        "name_en": "Yamuna - ground pepper",
+        "name_ka": "yamuna - პილპილი დაფქული",
+        "unit": "20",
+        "unit_type": "g",
+        "brand": "Yamuna"
+    },
+    {
+        "id": 1542,
+        "name_en": "Yamuna - black peppercorn",
+        "name_ka": "yamuna - პილპილი მარცვალი",
+        "unit": "20",
+        "unit_type": "g",
+        "brand": "Yamuna"
+    },
+    {
+        "id": 1545,
+        "name_en": "Yamuna - fragrant black peppercorn",
+        "name_ka": "yamuna - პილპილი სურნელოვანი მარცვალი",
+        "unit": "15",
+        "unit_type": "g",
+        "brand": "Yamuna"
+    },
+    {
+        "id": 1550,
+        "name_en": "Litvuri Satskhobi - safaneli",
+        "name_ka": "ლიტვური საცხობი - საფანელი",
+        "unit": "200",
+        "unit_type": "g",
+        "brand": "Litvuri Satskhobi"
+    },
+    {
+        "id": 1556,
+        "name_en": "Khomli - dry adjika",
+        "name_ka": "ხომლი - მშრალი აჯიკა",
+        "unit": "100",
+        "unit_type": "g",
+        "brand": "Khomli"
+    },
+    {
+        "id": 1559,
+        "name_en": "Khomli - svanuri salt",
+        "name_ka": "ხომლი - სვანური მარილი",
+        "unit": "100",
+        "unit_type": "g",
+        "brand": "Khomli"
+    },
+    {
+        "id": 1567,
+        "name_en": "Khomli - dried seasoning",
+        "name_ka": "ხომლი - ხმელი სუნელი",
+        "unit": "50",
+        "unit_type": "g",
+        "brand": "Khomli"
+    },
+    {
+        "id": 1568,
+        "name_en": "Geo - exotic seasoning ground",
+        "name_ka": "ჯეო - უცხო სუნელი დაფქვილი",
+        "unit": "50",
+        "unit_type": "g",
+        "brand": "Geo"
+    },
+    {
+        "id": 1570,
+        "name_en": "GNP - dry baje",
+        "name_ka": "GNP - ბაჟე მშრალი",
+        "unit": "1",
+        "unit_type": "pcs",
+        "brand": "GNP"
+    },
+    {
+        "id": 1571,
+        "name_en": "Geo - bulgarian pepper ground",
+        "name_ka": "ჯეო - ბულგარული წიწაკა დაფქვილი",
+        "unit": "50",
+        "unit_type": "g",
+        "brand": "Geo"
+    },
+    {
+        "id": 1572,
+        "name_en": "Geo - ground cinnamon",
+        "name_ka": "ჯეო - დარიჩინი დაფქვილი",
+        "unit": "10",
+        "unit_type": "g",
+        "brand": "Geo"
+    },
+    {
+        "id": 1573,
+        "name_en": "Geo - illi seed (cardamom)",
+        "name_ka": "ჯეო - ილი მარცვალი (კარდამონი)",
+        "unit": "10",
+        "unit_type": "g",
+        "brand": "Geo"
+    },
+    {
+        "id": 1574,
+        "name_en": "Geo - citric acid",
+        "name_ka": "ჯეო - ლიმონმჟავა",
+        "unit": "10",
+        "unit_type": "g",
+        "brand": "Geo"
+    },
+    {
+        "id": 1577,
+        "name_en": "Geo - ground black pepper",
+        "name_ka": "ჯეო - შავი პილპილი დაფქვილი",
+        "unit": "50",
+        "unit_type": "g",
+        "brand": "Geo"
+    },
+    {
+        "id": 1578,
+        "name_en": "Geo - ground red pepper",
+        "name_ka": "ჯეო - წითელი წიწაკა დაფქვილი",
+        "unit": "50",
+        "unit_type": "g",
+        "brand": "Geo"
+    },
+    {
+        "id": 1579,
+        "name_en": "Geo - kharcho seasoning ground",
+        "name_ka": "ჯეო - ხარჩოს სუნელი დაფქვილი",
+        "unit": "50",
+        "unit_type": "g",
+        "brand": "Geo"
+    },
+    {
+        "id": 1580,
+        "name_en": "Jotis - strawberry jelly",
+        "name_ka": "JOTIS-ჟელე მარწყვის",
+        "unit": "75",
+        "unit_type": "g",
+        "brand": "Jotis"
+    },
+    {
+        "id": 1584,
+        "name_en": "Geo - ground black pepper",
+        "name_ka": "ჯეო - შავი პილპილი დაფქული",
+        "unit": "200",
+        "unit_type": "g",
+        "brand": "Geo"
+    },
+    {
+        "id": 1585,
+        "name_en": "Geo - ground red pepper",
+        "name_ka": "ჯეო - წითელი წიწაკა დაღერღილი",
+        "unit": "150",
+        "unit_type": "g",
+        "brand": "Geo"
+    },
+    {
+        "id": 1588,
+        "name_en": "Geo - turmeric in pet bottle",
+        "name_ka": "ჯეო - კურკუმა /პეტ/ბოთლი",
+        "unit": "40",
+        "unit_type": "g",
+        "brand": "Geo"
+    },
+    {
+        "id": 1589,
+        "name_en": "Geo - ground garlic",
+        "name_ka": "ჯეო - ნიორი დაფქვილი",
+        "unit": "1",
+        "unit_type": "pcs",
+        "brand": "Geo"
+    },
+    {
+        "id": 1591,
+        "name_en": "Geo - svanuri salt",
+        "name_ka": "ჯეო - სვანური მარილი",
+        "unit": "1",
+        "unit_type": "pcs",
+        "brand": "Geo"
+    },
+    {
+        "id": 1592,
+        "name_en": "Geo - exotic seasoning in pet bottle",
+        "name_ka": "ჯეო - უცხო სუნელი  /პეტ/ბოთლი",
+        "unit": "40",
+        "unit_type": "g",
+        "brand": "Geo"
+    },
+    {
+        "id": 1594,
+        "name_en": "Geo - yellow flower in pet bottle",
+        "name_ka": "ჯეო - ყვითელი ყვავილი  /პეტ/ბოთლი",
+        "unit": "20",
+        "unit_type": "g",
+        "brand": "Geo"
+    },
+    {
+        "id": 1600,
+        "name_en": "Sloboda - barbecue ketchup with dispenser",
+        "name_ka": "სლობოდა - კეტჩუპი  სამწვადე 300გრ. დოზატორით",
+        "unit": "300",
+        "unit_type": "g",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1601,
+        "name_en": "Sloboda - tomato ketchup with dispenser",
+        "name_ka": "სლობოდა - კეტჩუპი  ტომატის 300გრ. დოზატორით",
+        "unit": "300",
+        "unit_type": "g",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1602,
+        "name_en": "Sloboda - spicy ketchup with dispenser",
+        "name_ka": "სლობოდა - კეტჩუპი  ცხარე 300გრ. დოზატორით",
+        "unit": "300",
+        "unit_type": "g",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1606,
+        "name_en": "Torchini - delicate ketchup",
+        "name_ka": "ტორჩინი - კეჩუპი ნაზი",
+        "unit": "250",
+        "unit_type": "g",
+        "brand": "Torchini"
+    },
+    {
+        "id": 1607,
+        "name_en": "Torchini - delicate ketchup",
+        "name_ka": "ტორჩინი - კეჩუპი ნაზი",
+        "unit": "380",
+        "unit_type": "g",
+        "brand": "Torchini"
+    },
+    {
+        "id": 1608,
+        "name_en": "Torchini - barbecue ketchup",
+        "name_ka": "ტორჩინი - კეჩუპი სამწვადე",
+        "unit": "250",
+        "unit_type": "g",
+        "brand": "Torchini"
+    },
+    {
+        "id": 1609,
+        "name_en": "Torchini - barbecue ketchup",
+        "name_ka": "ტორჩინი - კეჩუპი სამწვადე",
+        "unit": "380",
+        "unit_type": "g",
+        "brand": "Torchini"
+    },
+    {
+        "id": 1610,
+        "name_en": "Torchini - chili ketchup",
+        "name_ka": "ტორჩინი - კეჩუპი ჩილი",
+        "unit": "250",
+        "unit_type": "g",
+        "brand": "Torchini"
+    },
+    {
+        "id": 1612,
+        "name_en": "Tri Zhelanie - classic ketchup doy-pack",
+        "name_ka": "ტრი ჟელანიე - კეტჩუპი კლასიკური დოი-პაკი",
+        "unit": "100",
+        "unit_type": "g",
+        "brand": "Tri Zhelanie"
+    },
+    {
+        "id": 1613,
+        "name_en": "Tri Zhelanie - chili ketchup doy-pack",
+        "name_ka": "ტრი ჟელანიე - კეტჩუპი ჩილი დოი-პაკი",
+        "unit": "100",
+        "unit_type": "g",
+        "brand": "Tri Zhelanie"
+    },
+    {
+        "id": 1614,
+        "name_en": "Tri Zhelanie - chili ketchup doy-pack",
+        "name_ka": "ტრი ჟელანიე - კეტჩუპი ჩილი დოი-პაკი",
+        "unit": "450",
+        "unit_type": "g",
+        "brand": "Tri Zhelanie"
+    },
+    {
+        "id": 1615,
+        "name_en": "Tri Zhelanie - classic ketchup doy-pack",
+        "name_ka": "ტრი ჟელანიე - კეტჩუპი კლასიკური დოი-პაკი",
+        "unit": "250",
+        "unit_type": "g",
+        "brand": "Tri Zhelanie"
+    },
+    {
+        "id": 1616,
+        "name_en": "Tri Zhelanie - classic ketchup doy-pack x 30 pcs",
+        "name_ka": "ტრი ჟელანიე - კეტჩუპი კლასიკური დოი-პაკი x 30 ც",
+        "unit": "450",
+        "unit_type": "g",
+        "brand": "Tri Zhelanie"
+    },
+    {
+        "id": 1617,
+        "name_en": "Tri Zhelanie - barbecue ketchup doy-pack",
+        "name_ka": "ტრი ჟელანიე - კეტჩუპი მწვადის დოი-პაკი",
+        "unit": "250",
+        "unit_type": "g",
+        "brand": "Tri Zhelanie"
+    },
+    {
+        "id": 1619,
+        "name_en": "Tri Zhelanie - chili ketchup doy-pack",
+        "name_ka": "ტრი ჟელანიე - კეტჩუპი ჩილი დოი-პაკი",
+        "unit": "250",
+        "unit_type": "g",
+        "brand": "Tri Zhelanie"
+    },
+    {
+        "id": 1620,
+        "name_en": "Kuhne - caesar sauce",
+        "name_ka": "Kuhne - ცეზარის სოუსი",
+        "unit": "1",
+        "unit_type": "pcs",
+        "brand": "Kuhne"
+    },
+    {
+        "id": 1621,
+        "name_en": "Riaba - provencal mayonnaise 67% 410g x 24 pcs",
+        "name_ka": "რიაბა - მაიონეზი პროვანსალი 67% 410გრ 24ც",
+        "unit": "410",
+        "unit_type": "g",
+        "brand": "Riaba"
+    },
+    {
+        "id": 1622,
+        "name_en": "Sloboda - olive mayonnaise 100ml",
+        "name_ka": "სლობოდა - მაიონეზი ოლივკოვი 100მლ",
+        "unit": "100",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1623,
+        "name_en": "Sloboda - olive mayonnaise 800ml bucket",
+        "name_ka": "სლობოდა - მაიონეზი ოლივკოვი 800მლ. ვედრო",
+        "unit": "800",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1624,
+        "name_en": "Sloboda - olive mayonnaise with dispenser 400ml",
+        "name_ka": "სლობოდა - მაიონეზი ოლივკოვი დოზატორით 400მლ",
+        "unit": "400",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1625,
+        "name_en": "Sloboda - provencal mayonnaise 800ml bucket",
+        "name_ka": "სლობოდა - მაიონეზი პროვანსალი 800მლ. ვედრო",
+        "unit": "800",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1626,
+        "name_en": "Sloboda - provencal mayonnaise sour cream 400ml with dispenser (24)",
+        "name_ka": "სლობოდა - მაიონეზი პროვანსალი არაჟნის 400 მლ. დოზატორით (24)",
+        "unit": "400",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1627,
+        "name_en": "Sloboda - vegetarian mayonnaise 200ml with dispenser (40)",
+        "name_ka": "სლობოდა - მაიონეზი სამარხვო 200 მლ. დოზატორით (40)",
+        "unit": "200",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1628,
+        "name_en": "Sloboda - vegetarian mayonnaise 400ml with dispenser (24)",
+        "name_ka": "სლობოდა - მაიონეზი სამარხვო 400 მლ. დოზატორით (24)",
+        "unit": "400",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1629,
+        "name_en": "Sloboda - vegetarian mayonnaise 830ml bucket (800g)",
+        "name_ka": "სლობოდა - მაიონეზი სამარხვო 830 მლ.(800გრ)ვედრო (12)",
+        "unit": "830",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1630,
+        "name_en": "Tri Zhelanie - vegetarian mayonnaise 57% doy-pack 190g x 60",
+        "name_ka": "ტრი ჟელანიე - მაიონეზი სამარხვო  57% დოი-პაკი  190  გრ  X 60",
+        "unit": "190",
+        "unit_type": "g",
+        "brand": "Tri Zhelanie"
+    },
+    {
+        "id": 1631,
+        "name_en": "Tri Zhelanie - olive mayonnaise 67% doy-pack 380g x 30 pcs",
+        "name_ka": "ტრი ჟელანიე - მაიონეზი ზეთისხილის 67% დოი-პაკი 380გრ X 30 ც",
+        "unit": "380",
+        "unit_type": "g",
+        "brand": "Tri Zhelanie"
+    },
+    {
+        "id": 1633,
+        "name_en": "Calve - provencal mayonnaise 67% 400g",
+        "name_ka": "Calve - მაიონეზი პროვანსალი 0.67 400/24",
+        "unit": "400",
+        "unit_type": "g",
+        "brand": "Calve"
+    },
+    {
+        "id": 1634,
+        "name_en": "Chveni Suphra - mayonnaise",
+        "name_ka": "ჩვენი სუფრა- მაიონეზი",
+        "unit": "200",
+        "unit_type": "ml",
+        "brand": "Chveni Suphra"
+    },
+    {
+        "id": 1637,
+        "name_en": "Sloboda - provencal mayonnaise 400ml with dispenser (24)",
+        "name_ka": "სლობოდა - მაიონეზი პროვანსალი 400 მლ. დოზატორით (24)",
+        "unit": "400",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1638,
+        "name_en": "Sloboda - tomato ketchup 200g with dispenser",
+        "name_ka": "სლობოდა - კეტჩუპი ტომატის 200გრ. დოზატორით",
+        "unit": "200",
+        "unit_type": "g",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1639,
+        "name_en": "Sloboda - olive mayonnaise 67% 200mg",
+        "name_ka": "სლობოდა - მაიონეზი ოლივკოვი 67% 200მგ",
+        "unit": "200",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1640,
+        "name_en": "Sloboda - caesar sauce 60% 217g",
+        "name_ka": "სლობოდა - სოუსი ცეზარი 60%  217 გრ. დოზატორით (20)",
+        "unit": "217",
+        "unit_type": "g",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1641,
+        "name_en": "Riaba - provencal mayonnaise 67% 200g x 28 pcs",
+        "name_ka": "რიაბა - მაიონეზი პროვანსალი 67% 200გრ 28ც",
+        "unit": "200",
+        "unit_type": "g",
+        "brand": "Riaba"
+    },
+    {
+        "id": 1642,
+        "name_en": "Sloboda - spicy ketchup 200g with dispenser",
+        "name_ka": "სლობოდა - კეტჩუპი ცხარე 200გრ. დოზატორით",
+        "unit": "200",
+        "unit_type": "g",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1643,
+        "name_en": "Tri Zhelanie - olive mayonnaise 67% doy-pack 190g",
+        "name_ka": "ტრი ჟელანიე - მაიონეზი ზეთისხილის 67%  დოი-პაკი  190 გრ",
+        "unit": "190",
+        "unit_type": "g",
+        "brand": "Tri Zhelanie"
+    },
+    {
+        "id": 1644,
+        "name_en": "Riaba - classic olive mayonnaise 390g x 16 pcs",
+        "name_ka": "რიაბა - მაიონიზი კლასიკური ოლივკოვი 390 გრ 16ც 67%",
+        "unit": "390",
+        "unit_type": "g",
+        "brand": "Riaba"
+    },
+    {
+        "id": 1645,
+        "name_en": "Sloboda - olive mayonnaise 800ml with dispenser",
+        "name_ka": "სლობოდა - მაიონეზი ოლივკოვი 800მლ დოზატორით",
+        "unit": "800",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1646,
+        "name_en": "Sloboda - provencal mayonnaise sour cream 800ml with dispenser (12)",
+        "name_ka": "სლობოდა - მაიონეზი პროვანსალი არაჟნის 800 მლ. დოზატორით (12)",
+        "unit": "800",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1647,
+        "name_en": "Sloboda - provencal mayonnaise 200ml with dispenser",
+        "name_ka": "სლობოდა - მაიონეზი პროვანსალი დოზატორით 200მლ.",
+        "unit": "200",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },{
+    "id": 1648,
+    "name_en": "Tri Zhelanie - provencal mayonnaise 67% doy-pack",
+    "name_ka": "ტრი ჟელანიე - მაიონეზი პროვანსალი 67% დოი-პაკი",
+    "unit": "380",
+    "unit_type": "g",
+    "brand": "Tri Zhelanie"
+},
+    {
+        "id": 1649,
+        "name_en": "Sloboda - mustard sauce 60% with dispenser",
+        "name_ka": "”სლობოდა”- სოუსი  მდოგვის 60% დოზატორით",
+        "unit": "220",
+        "unit_type": "g",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1651,
+        "name_en": "Sloboda - barbecue ketchup",
+        "name_ka": "სლობოდა - კეტჩუპი სამწვადე",
+        "unit": "200",
+        "unit_type": "g",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1652,
+        "name_en": "Kuhne - spicy dijon mustard",
+        "name_ka": "Kuhne - მდოგვი \"დიჟონის ცხარე\"",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Kuhne"
+    },
+    {
+        "id": 1654,
+        "name_en": "Kuhne - mustard with seeds",
+        "name_ka": "Kuhne - მდოგვი მარცვლით",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Kuhne"
+    },
+    {
+        "id": 1657,
+        "name_en": "Ojakuri - Abkhazian adjika",
+        "name_ka": "ოჯახური - აფხაზური აჯიკა",
+        "unit": "200",
+        "unit_type": "g",
+        "brand": "Ojakuri"
+    },
+    {
+        "id": 1658,
+        "name_en": "Bornier - Dijon mustard with honey",
+        "name_ka": "მდოგვი /Bornier/ დიჟონის თაფლით",
+        "unit": "235",
+        "unit_type": "g",
+        "brand": "Bornier"
+    },
+    {
+        "id": 1659,
+        "name_en": "Hellmanns - Dijon mustard",
+        "name_ka": "HELLMANNS - მდოგვი",
+        "unit": "250",
+        "unit_type": "g",
+        "brand": "Hellmanns"
+    },
+    {
+        "id": 1660,
+        "name_en": "Supremo - red ketchup",
+        "name_ka": "SUPREMO - ტყემალი წითელი",
+        "unit": "310",
+        "unit_type": "ml",
+        "brand": "Supremo"
+    },
+    {
+        "id": 1663,
+        "name_en": "Kula - classic dressing",
+        "name_ka": "კულა - საწებელი კლასიკური",
+        "unit": "345",
+        "unit_type": "g",
+        "brand": "Kula"
+    },
+    {
+        "id": 1664,
+        "name_en": "Kula - blackberry dressing",
+        "name_ka": "კულა - საწებელი მაყვლის",
+        "unit": "360",
+        "unit_type": "g",
+        "brand": "Kula"
+    },
+    {
+        "id": 1666,
+        "name_en": "Kula - classic green ketchup",
+        "name_ka": "კულა - ტყემალი მწვანე კლასიკური",
+        "unit": "365",
+        "unit_type": "g",
+        "brand": "Kula"
+    },
+    {
+        "id": 1667,
+        "name_en": "Kula - classic yellow ketchup",
+        "name_ka": "კულა - ტყემალი ყვითელი კლასიკური",
+        "unit": "365",
+        "unit_type": "g",
+        "brand": "Kula"
+    },
+    {
+        "id": 1668,
+        "name_en": "Kula - classic red ketchup",
+        "name_ka": "კულა - ტყემალი წითელი კლასიკური",
+        "unit": "365",
+        "unit_type": "g",
+        "brand": "Kula"
+    },
+    {
+        "id": 1669,
+        "name_en": "Nena - green ketchup",
+        "name_ka": "ნენა - მწვანე ტყემალი",
+        "unit": "330",
+        "unit_type": "g",
+        "brand": "Nena"
+    },
+    {
+        "id": 1670,
+        "name_en": "Nena - yellow ketchup",
+        "name_ka": "ნენა - ყვითელი ტყემალი",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Nena"
+    },
+    {
+        "id": 1671,
+        "name_en": "Barilla - tomato sauce",
+        "name_ka": "BARILLA - სოუსი პომიდვრის",
+        "unit": "1",
+        "unit_type": "pcs",
+        "brand": "Barilla"
+    },
+    {
+        "id": 1673,
+        "name_en": "M - fresh tomato dressing",
+        "name_ka": "M- პომიდვრის საწებელი ახალი",
+        "unit": "540",
+        "unit_type": "g",
+        "brand": "M"
+    },
+    {
+        "id": 1674,
+        "name_en": "M - spicy tomato dressing",
+        "name_ka": "M- პომიდვრის საწებელი ცხარე",
+        "unit": "540",
+        "unit_type": "g",
+        "brand": "M"
+    },
+    {
+        "id": 1675,
+        "name_en": "M - green ketchup in glass",
+        "name_ka": "M- ტყემალი მწვანე (შუშა)",
+        "unit": "330",
+        "unit_type": "g",
+        "brand": "M"
+    },
+    {
+        "id": 1676,
+        "name_en": "M - traditional red ketchup",
+        "name_ka": "M- ტყემალი წითელი ტრადიციული",
+        "unit": "330",
+        "unit_type": "g",
+        "brand": "M"
+    },
+    {
+        "id": 1677,
+        "name_en": "M - fresh tomato dressing in glass",
+        "name_ka": "M- ცოცხალი პომიდორის საწებელი (შუშა)",
+        "unit": "530",
+        "unit_type": "g",
+        "brand": "M"
+    },{
+    "id": 1678,
+    "name_en": "Monti - red dry tomato pesto",
+    "name_ka": "Monti - წითელი (მშრალი პომიდვრის) პესტო",
+    "unit": "180",
+    "unit_type": "g",
+    "brand": "Monti"
+},
+    {
+        "id": 1680,
+        "name_en": "Ponti - concentrated vinegar with grape must",
+        "name_ka": "PONTI - ძმარი კონცენტრირებული გლასე სოიოთი",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Ponti"
+    },
+    {
+        "id": 1682,
+        "name_en": "Supremo - yellow ketchup",
+        "name_ka": "SUPREMO - ტყემალი ყვითელი",
+        "unit": "310",
+        "unit_type": "ml",
+        "brand": "Supremo"
+    },
+    {
+        "id": 1683,
+        "name_en": "M - traditional red ketchup",
+        "name_ka": "M- ტყემალი წითელი ტრადიციული",
+        "unit": "530",
+        "unit_type": "g",
+        "brand": "M"
+    },
+    {
+        "id": 1684,
+        "name_en": "M - green ketchup",
+        "name_ka": "M- ტყემალი მწვანე",
+        "unit": "530",
+        "unit_type": "g",
+        "brand": "M"
+    },
+    {
+        "id": 1685,
+        "name_en": "Chain Kwo - soy sauce L.S.",
+        "name_ka": "Chain Kwo - სოიოს L S",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Chain Kwo"
+    },
+    {
+        "id": 1687,
+        "name_en": "Chain Kwo - worcestershire sauce",
+        "name_ka": "Chain Kwo - სოუსი ვუსტერშირის",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Chain Kwo"
+    },
+    {
+        "id": 1691,
+        "name_en": "Hellmanns - barbecue sauce",
+        "name_ka": "HELLMANNS - ბარბექიუ სოუსი",
+        "unit": "285",
+        "unit_type": "g",
+        "brand": "Hellmanns"
+    },
+    {
+        "id": 1695,
+        "name_en": "Jade Bridge - low salt soy sauce L.S.",
+        "name_ka": "JADE BRINDGE -სოუსი სოიოს ნაკლებად მარილიანი L.S.",
+        "unit": "150",
+        "unit_type": "ml",
+        "brand": "Jade Bridge"
+    },
+    {
+        "id": 1697,
+        "name_en": "Kuhne - mustard 30% spicy",
+        "name_ka": "Kuhne - მაშარაფი 30% spicy",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Kuhne"
+    },
+    {
+        "id": 1698,
+        "name_en": "Kuhne - mustard 30% spicy",
+        "name_ka": "Kuhne - მაშარაფი 30% spicy",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Kuhne"
+    },
+    {
+        "id": 1699,
+        "name_en": "Kuhne - mustard",
+        "name_ka": "Kuhne - მდოგვი",
+        "unit": "1",
+        "unit_type": "pcs",
+        "brand": "Kuhne"
+    },
+    {
+        "id": 1700,
+        "name_en": "Kuhne - horseradish",
+        "name_ka": "Kuhne - პირშუშხა",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Kuhne"
+    },
+    {
+        "id": 1701,
+        "name_en": "Kuhne - thousand island salad dressing",
+        "name_ka": "Kuhne - სალათის სოუსი \"ათასი კუნძული\"",
+        "unit": "1",
+        "unit_type": "pcs",
+        "brand": "Kuhne"
+    },{
+    "id": 1702,
+    "name_en": "Kuhne - hot chili sauce",
+    "name_ka": "Kuhne - სოუსი \"ჰოთ ჩილი\"",
+    "unit": "250",
+    "unit_type": "ml",
+    "brand": "Kuhne"
+},
+    {
+        "id": 1703,
+        "name_en": "Kuhne - curry sauce",
+        "name_ka": "Kuhne - სოუსი კარით",
+        "unit": "1",
+        "unit_type": "pcs",
+        "brand": "Kuhne"
+    },
+    {
+        "id": 1704,
+        "name_en": "Kuhne - spice sauce",
+        "name_ka": "Kuhne - სოუსი სანელებლებით",
+        "unit": "1",
+        "unit_type": "pcs",
+        "brand": "Kuhne"
+    },
+    {
+        "id": 1705,
+        "name_en": "Made for Meat - cranberry barbecue sauce",
+        "name_ka": "Made for Meat - სოუსი მოცვის ბარბექიუ",
+        "unit": "375",
+        "unit_type": "ml",
+        "brand": "Made for Meat"
+    },
+    {
+        "id": 1706,
+        "name_en": "Mutti - pizza sauce with spices (tin)",
+        "name_ka": "Mutti - პიცის სოუსი სანელებლებით (თუნუქი)",
+        "unit": "400",
+        "unit_type": "g",
+        "brand": "Mutti"
+    },
+    {
+        "id": 1707,
+        "name_en": "RealTHAI - fish sauce",
+        "name_ka": "RealTHAI - თევზის სოუსი",
+        "unit": "200",
+        "unit_type": "ml",
+        "brand": "RealTHAI"
+    },
+    {
+        "id": 1708,
+        "name_en": "RealTHAI - sesame sauce",
+        "name_ka": "RealTHAI - სეზამის სოუსი",
+        "unit": "200",
+        "unit_type": "ml",
+        "brand": "RealTHAI"
+    },
+    {
+        "id": 1709,
+        "name_en": "RealTHAI - sriracha extra hot chili sauce",
+        "name_ka": "RealTHAI - სრირაჩა ექსტრა ცხარე ჩილი სოუსი",
+        "unit": "430",
+        "unit_type": "ml",
+        "brand": "RealTHAI"
+    },
+    {
+        "id": 1710,
+        "name_en": "RealTHAI - sriracha extra hot chili sauce",
+        "name_ka": "RealTHAI - სრირაჩა ექსტრა ცხარე ჩილი სოუსი",
+        "unit": "740",
+        "unit_type": "ml",
+        "brand": "RealTHAI"
+    },
+    {
+        "id": 1711,
+        "name_en": "RealTHAI - sweet chili sauce",
+        "name_ka": "RealTHAI - ტკბილი ჩილის სოუსი",
+        "unit": "180",
+        "unit_type": "ml",
+        "brand": "RealTHAI"
+    },
+    {
+        "id": 1712,
+        "name_en": "RealTHAI - sweet chili sauce",
+        "name_ka": "RealTHAI - ტკბილი ჩილის სოუსი",
+        "unit": "430",
+        "unit_type": "ml",
+        "brand": "RealTHAI"
+    },
+    {
+        "id": 1713,
+        "name_en": "RealTHAI - black pepper sauce",
+        "name_ka": "RealTHAI - შავი პილპილის სოუსი",
+        "unit": "150",
+        "unit_type": "ml",
+        "brand": "RealTHAI"
+    },
+    {
+        "id": 1718,
+        "name_en": "Sloboda - cheese sauce 60% with dispenser",
+        "name_ka": "სლობოდა - სოუსი ყველის 60% 0,217 გრ. დოზატორით (20)",
+        "unit": "217",
+        "unit_type": "g",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1721,
+        "name_en": "Astoria - cheese sauce",
+        "name_ka": "Astoria - სოუსი ყველით",
+        "unit": "200",
+        "unit_type": "g",
+        "brand": "Astoria"
+    },
+    {
+        "id": 1722,
+        "name_en": "Astoria - burger sauce x 10 pcs",
+        "name_ka": "Astoria - სოუსი ბურგერის 200გრ 10ც",
+        "unit": "200",
+        "unit_type": "g",
+        "brand": "Astoria"
+    },
+    {
+        "id": 1723,
+        "name_en": "Astoria - sandwich sauce",
+        "name_ka": "Astoria - სოუსი სენდვიჩის 200გრ",
+        "unit": "200",
+        "unit_type": "g",
+        "brand": "Astoria"
+    },
+    {
+        "id": 1724,
+        "name_en": "Astoria - Caesar sauce with cheese x 16 pcs",
+        "name_ka": "Astoria - სოუსი ცეზარი ყველით x 16 ც",
+        "unit": "200",
+        "unit_type": "g",
+        "brand": "Astoria"
+    },
+    {
+        "id": 1725,
+        "name_en": "Astoria - onion and sour cream sauce",
+        "name_ka": "Astoria - სოუსი ხახვით და არაჟანით",
+        "unit": "233",
+        "unit_type": "g",
+        "brand": "Astoria"
+    },
+    {
+        "id": 1726,
+        "name_en": "Barilla - Arrabbiata sauce",
+        "name_ka": "BARILLA - სოუსი \"არაბიატა\"",
+        "unit": "400",
+        "unit_type": "g",
+        "brand": "Barilla"
+    },
+    {
+        "id": 1727,
+        "name_en": "Barilla - Pesto basilico and rucola sauce x 12 pcs",
+        "name_ka": "BARILLA - სოუსი \"პესტო ბაზილიკო და რუკოლა\" x 12 ც",
+        "unit": "190",
+        "unit_type": "g",
+        "brand": "Barilla"
+    },
+    {
+        "id": 1728,
+        "name_en": "Barilla - Pesto Genovese sauce",
+        "name_ka": "BARILLA - სოუსი \"პესტო ჯენოვეზე\"",
+        "unit": "190",
+        "unit_type": "g",
+        "brand": "Barilla"
+    },
+    {
+        "id": 1730,
+        "name_en": "Bornier - whole grain mustard x 12 pcs",
+        "name_ka": "BORNIER - მთლიანი მარცვლების მდოგვი x 12 ც",
+        "unit": "210",
+        "unit_type": "g",
+        "brand": "Bornier"
+    },
+    {
+        "id": 1731,
+        "name_en": "Gemo - lemon sauce x 24 pcs",
+        "name_ka": "Gemo - ლიმონის სოუსი x 24 ც",
+        "unit": "500",
+        "unit_type": "g",
+        "brand": "Gemo"
+    },
+    {
+        "id": 1732,
+        "name_en": "M - adjika in glass",
+        "name_ka": "M- აჯიკა (შუშა)",
+        "unit": "210",
+        "unit_type": "g",
+        "brand": "M"
+    },
+    {
+        "id": 1733,
+        "name_en": "M - green adjika",
+        "name_ka": "M- მწვანე აჯიკა",
+        "unit": "210",
+        "unit_type": "g",
+        "brand": "M"
+    },
+    {
+        "id": 1734,
+        "name_en": "Made for Meat - paprika barbecue sauce x 4 pcs",
+        "name_ka": "Made for Meat - სოუსი პაპრიკა გრილზე x 4 ც",
+        "unit": "375",
+        "unit_type": "ml",
+        "brand": "Made for Meat"
+    },
+    {
+        "id": 1735,
+        "name_en": "Pomi - Italian arrabbiata tomato sauce x 6 pcs",
+        "name_ka": "Pomi - იტალიური პომიდვრის სოუსი \"არაბიატა\" x 6 ც",
+        "unit": "400",
+        "unit_type": "g",
+        "brand": "Pomi"
+    },
+    {
+        "id": 1736,
+        "name_en": "Reggia - basilico pasta sauce",
+        "name_ka": "REGGIA - მაკარონის სოუსი ბაზილიკო",
+        "unit": "350",
+        "unit_type": "g",
+        "brand": "Reggia"
+    },
+    {
+        "id": 1737,
+        "name_en": "Reggia - bolognese pasta sauce",
+        "name_ka": "REGGIA - მაკარონის სოუსი ბოლონეზე",
+        "unit": "350",
+        "unit_type": "g",
+        "brand": "Reggia"
+    },
+    {
+        "id": 1739,
+        "name_en": "Reggia - Genovese pasta sauce",
+        "name_ka": "REGGIA - მაკარონის სოუსი ჯენოვეზე",
+        "unit": "190",
+        "unit_type": "g",
+        "brand": "Reggia"
+    },
+    {
+        "id": 1742,
+        "name_en": "Coopoliva - Pure olive oil",
+        "name_ka": "COOPOLIVA - ზეითუნის ზეთი Pure",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Coopoliva"
+    },
+    {
+        "id": 1743,
+        "name_en": "Coopoliva - E.V. olive oil",
+        "name_ka": "COOPOLIVA - ზეითუნის ზეთი E.V.",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Coopoliva"
+    },
+    {
+        "id": 1744,
+        "name_en": "Coopoliva - E.V. olive oil",
+        "name_ka": "COOPOLIVA - ზეითუნის ზეთი E.V.",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Coopoliva"
+    },
+    {
+        "id": 1745,
+        "name_en": "Coopoliva - E.V. GOLD olive oil",
+        "name_ka": "COOPOLIVA - ზეითუნის ზეთი E.V. GOLD",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Coopoliva"
+    },
+    {
+        "id": 1746,
+        "name_en": "Coopoliva - E.L. olive oil x 12 pcs",
+        "name_ka": "COOPOLIVA - ზეითუნის ზეთი E.L. x 12 ც",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Coopoliva"
+    },
+    {
+        "id": 1747,
+        "name_en": "Coopoliva - E.L. olive oil",
+        "name_ka": "COOPOLIVA - ზეითუნის ზეთი E.L.",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Coopoliva"
+    },
+    {
+        "id": 1748,
+        "name_en": "Coopoliva - E.L. olive oil",
+        "name_ka": "COOPOLIVA - ზეითუნის ზეთი E.L.",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Coopoliva"
+    },
+    {
+        "id": 1749,
+        "name_en": "Coopoliva - E.V. olive oil x 12 pcs",
+        "name_ka": "COOPOLIVA - ზეითუნის ზეთი E.V. x 12 ც",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Coopoliva"
+    },
+    {
+        "id": 1750,
+        "name_en": "Coopoliva - Pure olive oil",
+        "name_ka": "COOPOLIVA - ზეითუნის ზეთი Pure",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Coopoliva"
+    },
+    {
+        "id": 1751,
+        "name_en": "Coopoliva - corn oil",
+        "name_ka": "COOPOLIVA - სიმინდის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Coopoliva"
+    },
+    {
+        "id": 1752,
+        "name_en": "Final - Riviera olive oil",
+        "name_ka": "FINAL - ზეითუნის ზეთი რივიერა",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Final"
+    },
+    {
+        "id": 1753,
+        "name_en": "Final - corn oil",
+        "name_ka": "FINAL - სიმინდის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Final"
+    },
+    {
+        "id": 1754,
+        "name_en": "Final - corn oil",
+        "name_ka": "FINAL - სიმინდის ზეთი",
+        "unit": "2000",
+        "unit_type": "ml",
+        "brand": "Final"
+    },
+    {
+        "id": 1755,
+        "name_en": "Golden Kings - pumpkin oil",
+        "name_ka": "Golden Kings - გოგრის ზეთი",
+        "unit": "100",
+        "unit_type": "g",
+        "brand": "Golden Kings"
+    },
+    {
+        "id": 1756,
+        "name_en": "Golden Kings - hemp oil",
+        "name_ka": "Golden Kings - კანაფის ზეთი",
+        "unit": "100",
+        "unit_type": "g",
+        "brand": "Golden Kings"
+    },
+    {
+        "id": 1757,
+        "name_en": "Golden Kings - walnut oil",
+        "name_ka": "Golden Kings - ნიგვზის ზეთი",
+        "unit": "350",
+        "unit_type": "g",
+        "brand": "Golden Kings"
+    },
+    {
+        "id": 1759,
+        "name_en": "Golden Kings - flaxseed oil",
+        "name_ka": "Golden Kings - სელის ზეთი",
+        "unit": "100",
+        "unit_type": "g",
+        "brand": "Golden Kings"
+    },
+    {
+        "id": 1760,
+        "name_en": "Golden Kings - flaxseed oil",
+        "name_ka": "Golden Kings - სელის ზეთი",
+        "unit": "350",
+        "unit_type": "g",
+        "brand": "Golden Kings"
+    },
+    {
+        "id": 1766,
+        "name_en": "Luglio - DI SANSA olive oil",
+        "name_ka": "Luglio - ზეითუნის ზეთი \"DI SANSA\"",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Luglio"
+    },
+    {
+        "id": 1767,
+        "name_en": "Luglio - Pomace olive oil",
+        "name_ka": "Luglio - ზეითუნის ზეთი \"POMACE\"",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Luglio"
+    },
+    {
+        "id": 1768,
+        "name_en": "Luglio - olive oil",
+        "name_ka": "Luglio - ზეითუნის ზეთი",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Luglio"
+    },
+    {
+        "id": 1769,
+        "name_en": "Luglio - E.V. olive oil",
+        "name_ka": "Luglio - ზეითუნის ზეთი E.V.",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Luglio"
+    },
+    {
+        "id": 1770,
+        "name_en": "Luglio - E.V. olive oil",
+        "name_ka": "Luglio - ზეითუნის ზეთი E.V.",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Luglio"
+    },
+    {
+        "id": 1772,
+        "name_en": "Luglio - grape seed oil",
+        "name_ka": "Luglio - ყურძნის კურკის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Luglio"
+    },
+    {
+        "id": 1773,
+        "name_en": "Mocuze - corn oil",
+        "name_ka": "MOCUZE - სიმინდის ზეთი",
+        "unit": "2000",
+        "unit_type": "ml",
+        "brand": "Mocuze"
+    },
+    {
+        "id": 1774,
+        "name_en": "Oleina - sunflower oil",
+        "name_ka": "OLEINA - მზესუმზირის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Oleina"
+    },
+    {
+        "id": 1776,
+        "name_en": "Villa Blanca - children's olive oil",
+        "name_ka": "Villa Blanca - ზეითუნის ზეთი საბავშვო",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Villa Blanca"
+    },
+    {
+        "id": 1777,
+        "name_en": "Avedov - sunflower oil",
+        "name_ka": "ავედოვ - მზესუმზირის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Avedov"
+    },
+    {
+        "id": 1779,
+        "name_en": "Avedov - corn oil",
+        "name_ka": "ავედოვი - სიმინდის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Avedov"
+    },
+    {
+        "id": 1780,
+        "name_en": "Baraka - sunflower oil",
+        "name_ka": "ბარაქა - მზესუმზირის ზეთი",
+        "unit": "5000",
+        "unit_type": "ml",
+        "brand": "Baraka"
+    },
+    {
+        "id": 1781,
+        "name_en": "Baraka - sunflower oil",
+        "name_ka": "ბარაქა - მზესუმზირის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Baraka"
+    },
+    {
+        "id": 1782,
+        "name_en": "Baraka - sunflower oil",
+        "name_ka": "ბარაქა - მზესუმზირის ზეთი",
+        "unit": "1800",
+        "unit_type": "ml",
+        "brand": "Baraka"
+    },
+    {
+        "id": 1783,
+        "name_en": "Baraka - sunflower oil",
+        "name_ka": "ბარაქა - მზესუმზირის ზეთი",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Baraka"
+    },
+    {
+        "id": 1784,
+        "name_en": "Baraka - corn oil",
+        "name_ka": "ბარაქა - სიმინდის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Baraka"
+    },
+    {
+        "id": 1785,
+        "name_en": "Zalatoe Solnishko - sunflower oil",
+        "name_ka": "ზალატოე სოლნიშკო - მზესუმზირის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Zalatoe Solnishko"
+    },
+    {
+        "id": 1786,
+        "name_en": "Nuzli - walnut oil",
+        "name_ka": "ნუზლი - კაკლის ზეთი",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Nuzli"
+    },
+    {
+        "id": 1788,
+        "name_en": "Sloboda - sunflower oil",
+        "name_ka": "სლობოდა - მზესუმზირის ზეთი",
+        "unit": "1800",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1789,
+        "name_en": "Sloboda - sunflower oil",
+        "name_ka": "სლობოდა - მზესუმზირის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1790,
+        "name_en": "Sloboda - corn oil",
+        "name_ka": "სლობოდა - სიმინდის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Sloboda"
+    },
+    {
+        "id": 1791,
+        "name_en": "Basso - extra virgin olive oil",
+        "name_ka": "BASSO - ზეითუნის ზეთი ექსტრა",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Basso"
+    },
+    {
+        "id": 1792,
+        "name_en": "Basso - extra virgin olive oil",
+        "name_ka": "BASSO - ზეითუნის ზეთი ექსტრა",
+        "unit": "500",
+        "unit_type": "g",
+        "brand": "Basso"
+    },
+    {
+        "id": 1794,
+        "name_en": "Basso - pomace olive oil",
+        "name_ka": "BASSO - ზეითუნის ზეთი მეორადი დაწურვის",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Basso"
+    },
+    {
+        "id": 1795,
+        "name_en": "Basso - refined and cold-pressed olive oil",
+        "name_ka": "BASSO - ზეითუნის ზეთი რაფინირებული + ცივი დაწურვის",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Basso"
+    },
+    {
+        "id": 1796,
+        "name_en": "Basso - refined and cold-pressed olive oil",
+        "name_ka": "BASSO - ზეითუნის ზეთი რაფინირებული + ცივი დაწურვის",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Basso"
+    },
+    {
+        "id": 1797,
+        "name_en": "Basso - refined and cold-pressed olive oil",
+        "name_ka": "BASSO - რაფინირებული + ცივი დაწურვის ზეითუნის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Basso"
+    },
+    {
+        "id": 1799,
+        "name_en": "Colavita - balsamic vinegar",
+        "name_ka": "Colavita - ბალზამიკო",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Colavita"
+    },
+    {
+        "id": 1800,
+        "name_en": "Kalamata - E.V. BIO olive oil",
+        "name_ka": "KALAMATA - ზეითუნის ზეთი E.V. BIO",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Kalamata"
+    },
+    {
+        "id": 1801,
+        "name_en": "Maestro de Olive - olive oil",
+        "name_ka": "Maestro de Olive- ზეითუნის ზეთი",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Maestro de Olive"
+    },
+    {
+        "id": 1803,
+        "name_en": "Oleina - sunflower oil",
+        "name_ka": "OLEINA - მზესუმზირის ზეთი",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Oleina"
+    },
+    {
+        "id": 1804,
+        "name_en": "Pallade - extra virgin olive oil x 12 pcs",
+        "name_ka": "PALLADE - ექსტრა ვირჯინ ზეითუნის ზეთი x 12 ც",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Pallade"
+    },
+    {
+        "id": 1805,
+        "name_en": "Pallade - rapeseed oil x 12 pcs",
+        "name_ka": "PALLADE - რაფსის ყვავილის ზეთი x 12 ც",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Pallade"
+    },
+    {
+        "id": 1808,
+        "name_en": "Zucchi - olive oil",
+        "name_ka": "Zucchi-ზეთი ზეითუნის",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Zucchi"
+    },
+    {
+        "id": 1809,
+        "name_en": "Zucchi - organic extra virgin olive oil",
+        "name_ka": "Zucchi-ზეთი ზეითუნის ორგანული ექსტრა ვირჯინ",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Zucchi"
+    },
+    {
+        "id": 1810,
+        "name_en": "Zucchi - balsamic vinegar",
+        "name_ka": "Zucchi-ძმარი ბალზამირებული",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Zucchi"
+    },
+    {
+        "id": 1811,
+        "name_en": "Zucchi - balsamic vinegar",
+        "name_ka": "Zucchi-ძმარი ბალზამირებული",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Zucchi"
+    },
+    {
+        "id": 1812,
+        "name_en": "Zucchi - apple vinegar",
+        "name_ka": "Zucchi-ძმარი ვაშლის",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Zucchi"
+    },
+    {
+        "id": 1814,
+        "name_en": "Chveni Suphra - sunflower oil",
+        "name_ka": "ჩვენი სუფრა- მზესუმზირის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Chveni Suphra"
+    },
+    {
+        "id": 1816,
+        "name_en": "Chveni Suphra - corn oil",
+        "name_ka": "ჩვენი სუფრა- სიმინდის ზეთი",
+        "unit": "1000",
+        "unit_type": "ml",
+        "brand": "Chveni Suphra"
+    },
+    {
+        "id": 1818,
+        "name_en": "Kuhne - balsamic vinegar for salad",
+        "name_ka": "Kuhne - ბალზამიკო სალათის",
+        "unit": "1",
+        "unit_type": "pcs",
+        "brand": "Kuhne"
+    },
+    {
+        "id": 1819,
+        "name_en": "Kuhne - apple vinegar",
+        "name_ka": "Kuhne - ვაშლის ძმარი",
+        "unit": "1",
+        "unit_type": "pcs",
+        "brand": "Kuhne"
+    },
+    {
+        "id": 1820,
+        "name_en": "Kuhne - balsamic vinegar 6% from Modena",
+        "name_ka": "Kuhne - ძმარი ბალზამირებული მოდენადან 6%",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Kuhne"
+    },
+    {
+        "id": 1821,
+        "name_en": "Kuhne - lemon vinegar",
+        "name_ka": "Kuhne - ძმარი ლიმონით",
+        "unit": "1",
+        "unit_type": "pcs",
+        "brand": "Kuhne"
+    },
+    {
+        "id": 1822,
+        "name_en": "Ponti - BIO apple vinegar",
+        "name_ka": "PONTI - ძმარი ვაშლის BIO",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Ponti"
+    },
+    {
+        "id": 1823,
+        "name_en": "Ponti - balsamic vinegar",
+        "name_ka": "PONTI - ძმარი ბალზამირებული",
+        "unit": "250",
+        "unit_type": "ml",
+        "brand": "Ponti"
+    },
+    {
+        "id": 1824,
+        "name_en": "Ponti - balsamic vinegar",
+        "name_ka": "PONTI - ძმარი ბალზამირებული",
+        "unit": "500",
+        "unit_type": "ml",
+        "brand": "Ponti"
+    },
+    {
+        "id": 1826,
+        "name_en": "Ponti - white vinegar",
+        "name_ka": "PONTI - ძმარი თეთრი",
+        "unit": "1",
+        "unit_type": "pcs",
+        "brand": "Ponti"
+    }
+
+
+
+]
