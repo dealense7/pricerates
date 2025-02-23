@@ -18,11 +18,6 @@ class SwissParser extends CurrencyParser
         $result = [];
 
         $crawler               = new Crawler($request->getBody()->getContents());
-        $interestingCurrencies = [
-            IsoCode::EUR->getIsoCode() => IsoCode::EUR,
-            IsoCode::USD->getIsoCode() => IsoCode::USD,
-            IsoCode::GBP->getIsoCode() => IsoCode::GBP,
-        ];
 
         $crawler
             ->filter('body > div.global-wrap > header.product-full-top > div.calc-wrapper > div > div.calc.calc-currency.calc-currency-left.curr-list > div.cl-type.cl-type-sc > table > tbody > tr')

@@ -18,11 +18,6 @@ class ProCreditParser extends CurrencyParser
         $result = [];
 
         $crawler               = new Crawler($request->getBody()->getContents());
-        $interestingCurrencies = [
-            IsoCode::EUR->getIsoCode() => IsoCode::EUR,
-            IsoCode::USD->getIsoCode() => IsoCode::USD,
-            IsoCode::GBP->getIsoCode() => IsoCode::GBP,
-        ];
 
         $crawler
             ->filter('#block-system-main > div > div > section > div > div > div.exchange-oficial-rates-bl > div.exchange-items > article.exchange-item')

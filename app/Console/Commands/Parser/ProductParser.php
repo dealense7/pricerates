@@ -4,30 +4,19 @@ declare(strict_types=1);
 
 namespace App\Console\Commands\Parser;
 
+use App\Models\Products\Price;
 use App\Models\Store\Store;
 use App\Parsers\GlovoParser;
+use Illuminate\Cache\TaggableStore;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Cache;
 
 class ProductParser extends Command
 {
-    /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'app:product-parser';
+    protected $signature   = 'app:product-parser';
+    protected $description = 'Fetch new products and it prices';
 
-    /**
-     * The console command description.
-     *
-     * @var string
-     */
-    protected $description = 'Command description';
-
-    /**
-     * Execute the console command.
-     */
-    public function handle()
+    public function handle(): void
     {
         $stores = (new Store())->query()
             ->with(['urls'])
@@ -42,6 +31,22 @@ class ProductParser extends Command
                     storeId: $store->id,
                 );
             }
+        }
+
+        (new Price())->newQuery()
+            ->where('status', false)
+            ->where('created_at', '>=', today()->startOfDay())
+            ->update(['status' => true]);
+
+        (new Price())->newQuery()
+            ->where('status', true)
+            ->where('created_at', '<', now()->subDays(3))
+            ->update(['status' => false]);
+
+
+
+        if (Cache::getStore() instanceof TaggableStore) {
+            Cache::tags([Price::class])->flush();
         }
     }
 }

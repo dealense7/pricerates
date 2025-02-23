@@ -141,7 +141,8 @@ class StoreSeeder extends Seeder
         ];
 
         foreach ($items as $item) {
-            $store = (new StoreModel())->create(Arr::only($item, ['id', 'name', 'show', 'slug']));
+            $store = (new StoreModel())->updateOrInsert(['id' => $item['id']], Arr::only($item, ['id', 'name', 'show', 'slug']));
+            $store->urls()->delete();
             $store->urls()->createMany($item['urls']);
         }
 

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Models\General;
 
 use App\Models\Model;
+use App\Models\Products\Item;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
@@ -66,5 +67,10 @@ class Category extends Model
     public function children(): HasMany
     {
         return $this->hasMany(self::class, 'parent_id');
+    }
+
+    public function products(): HasMany
+    {
+        return $this->hasMany(Item::class, 'category_id');
     }
 }

@@ -5,8 +5,11 @@ declare(strict_types=1);
 namespace App\Console\Commands;
 
 use App\Enums\Currency\Provider;
+use App\Models\Currency\CurrencyRate;
 use App\Models\Currency\Provider as CurrencyProvider;
+use Illuminate\Cache\TaggableStore;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Cache;
 
 class FetchCurrencyData extends Command
 {
@@ -23,9 +26,13 @@ class FetchCurrencyData extends Command
                 continue;
             }
             /** @var \App\Parsers\Currency\CurrencyParser $parser */
-            $parser = resolve(Provider::from($item->getId())->getParserClass());
+            $parser = Provider::from($item->getId())->getParserClass();
 
-            $parser->parse($item->getId());
+            $parser::dispatch($item->getId());
+        }
+
+        if (Cache::getStore() instanceof TaggableStore) {
+            Cache::tags([CurrencyRate::class])->flush();
         }
     }
 }

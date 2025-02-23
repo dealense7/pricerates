@@ -1,13 +1,13 @@
 <div>
     <div class="border-b">
-        <div class="w-8/12 mx-auto border-r border-l">
+        <div class="w-full sm:w-8/12 mx-auto border-r border-l">
             <div class="w-3/4 mx-auto border-r border-l border-dashed">
                 <div class="py-24 px-5  grid">
                     <h2 class="font-bold text-2xl text-neutral-900">
                         პროლოგი
                     </h2>
                     <p class="font-normal text-xs text-neutral-800 mt-1">
-                        ჩვენ დაგეხმარებით იპოვოთ პროდუქტი უკეთეს ფასად და დაზოგოთ რაც შეიძლება მეტი.
+                        დაგეხმარებით იპოვოთ პროდუქტი უკეთეს ფასად და დაზოგოთ რაც შეიძლება მეტი.
                     </p>
                     <p class="font-normal text-sm text-neutral-500 mt-1">
                         <small>ფასები გადმოტანილია სხვა-და-სხვა პროვაიდერებიდან, შეიძლება არ იყოს რეალური.</small>
@@ -22,7 +22,7 @@
     </div>
 
     <div class="border-b">
-        <div class="w-8/12 mx-auto border-r border-l">
+        <div class="w-full sm:w-8/12 mx-auto border-r border-l">
             <x-main.widget.currency :currencies="$currencies"/>
         </div>
     </div>

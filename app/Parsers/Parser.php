@@ -5,12 +5,9 @@ declare(strict_types=1);
 namespace App\Parsers;
 
 use App\Enums\General\Category;
-use App\Models\General\File;
 use App\Models\Products\Item;
 use App\Models\Products\Price;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Storage;
 
 abstract class Parser
 {
@@ -29,7 +26,7 @@ abstract class Parser
                 $barCode = $this->getBarCodeFromName($item);
                 if (! $this->validateBarCode(strlen($barCode))) {
                     $barCode = $this->getBarCodeFromImage($item);
-                    if (! $this->validateBarCode(strlen($barCode))) {
+                    if (is_null($barCode) || ! $this->validateBarCode(strlen($barCode))) {
                         continue;
                     }
                 }
@@ -57,37 +54,10 @@ abstract class Parser
         /** @var \App\Parsers\ItemDto $item */
         foreach ($items as $item) {
             $productId = $this->getItemIdByBarCode($item->barCode);
-            if (! is_null($productId) && $item->imageUrl) {
-                $imageUrl = $item->imageUrl;
-                $response = Http::get($imageUrl);
-
-                if ($response->successful()) {
-                    // Get the imgs content from the response
-                    $imageContents = $response->body();
-
-                    // Generate a unique filename for the imgs
-
-                    $filename = basename($imageUrl);
-                    $fileExtension = pathinfo($filename, PATHINFO_EXTENSION);
-                    $filename = $item->barCode . '.' . $fileExtension;
-
-                    // Store the imgs locally (use 'public' disk for public accessibility or 'local' for private storage)
-                    Storage::disk('public')->put('images/' . $filename, $imageContents);
-
-                        // Prepare the file data for the database
-                        $data = [
-                            'url' => Storage::url('images/' . $filename), // Generate the URL for the saved file
-                            'disk' => 'public',
-                            'extension' => $fileExtension,
-                            'size' => round(filesize(Storage::disk('public')->path('images/' . $filename)) / 1024, 2),
-                            'fileable_type' => Item::class,
-                            'fileable_id' => $productId,
-                        ];
-
-                        (new File())->newQuery()->insert($data);
-                        DB::table((new Item())->getTable())->where('id', $productId)->update(['has_image' => true]);
-                }
+            if (is_null($productId)) {
+                $productId = $this->createItemGetId($item);
             }
+            $this->savePrice($productId, $item);
         }
     }
 
@@ -107,7 +77,7 @@ abstract class Parser
 
     abstract protected function getBarCodeFromImage(array $item): ?string;
 
-    private function validateBarCode(int $len): bool
+    private function validateBarCode(?int $len = null): bool
     {
         //  EAN-8 → 8 digits (Used for small products like cans, chocolates)
         //  EAN-13 → 13 digits (Used internationally on most products)
@@ -122,7 +92,8 @@ abstract class Parser
 
     private function getItemIdByBarCode(string $barCode): ?int
     {
-        return DB::table((new Item())->getTable())->where('has_image', false)->whereNotNull('display_name_ka')->where('barcode', $barCode)->select('id')->first()?->id;
+        return DB::table((new Item())->getTable())->where('barcode', $barCode)->select('id')->first()?->id;
+        //        return DB::table((new Item())->getTable())->where('has_image', false)->whereNotNull('display_name_ka')->where('barcode', $barCode)->select('id')->first()?->id;
     }
 
     private function createItemGetId(ItemDto $item): int
@@ -141,22 +112,18 @@ abstract class Parser
 
     private function savePrice(int $productId, ItemDto $item): void
     {
-        $data = [
-            'item_id'       => $productId,
-            'provider_id'   => $item->providerId,
-            'store_id'      => $item->storeId,
-            'current_price' => $item->price,
-            'created_at'    => now()->format('Y-m-d H'),
-        ];
+        $currentHour = now()->startOfHour()->format('Y-m-d H');
 
-        DB::table((new Price())->getTable())->updateOrInsert(
+        (new Price())->newQuery()->updateOrInsert(
             [
                 'item_id'     => $productId,
                 'provider_id' => $item->providerId,
                 'store_id'    => $item->storeId,
-                'created_at'  => now()->format('Y-m-d H'),
+                'created_at'  => $currentHour,
             ],
-            $data,
+            [
+                'current_price' => $item->price,
+            ],
         );
     }
 }

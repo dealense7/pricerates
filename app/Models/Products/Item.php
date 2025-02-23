@@ -8,7 +8,8 @@ use App\Models\General\Category;
 use App\Models\General\File;
 use App\Models\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\MorphToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /**
  * @property int id
@@ -31,6 +32,7 @@ class Item extends Model
         'category_id',
         'show',
         'unit_type',
+        'brand_name',
         'unit',
         'has_image',
     ];
@@ -56,6 +58,16 @@ class Item extends Model
         return $this->name;
     }
 
+    public function getBrandName(): ?string
+    {
+        return $this->brand_name;
+    }
+
+    public function getDisplayName(): ?string
+    {
+        return $this->display_name_ka;
+    }
+
     public function getShow(): bool
     {
         return $this->show;
@@ -76,8 +88,13 @@ class Item extends Model
         return $this->belongsTo(Category::class, 'category_id');
     }
 
-    public function files(): MorphToMany
+    public function prices(): HasMany
     {
-        return $this->morphToMany(File::class, 'fileable');
+        return $this->hasMany(Price::class, 'item_id');
+    }
+
+    public function files(): MorphMany
+    {
+        return $this->morphMany(File::class, 'fileable');
     }
 }

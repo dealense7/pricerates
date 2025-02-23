@@ -17,7 +17,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class CurrencyRate extends Model
 {
     public $timestamps = false;
-    protected $table = 'currency_rates';
+    protected $table      = 'currency_rates';
 
     protected $fillable = [
         'currency_id',
@@ -25,6 +25,7 @@ class CurrencyRate extends Model
         'buy_rate',
         'sell_rate',
         'date',
+        'status',
     ];
 
     protected $casts = [
@@ -33,6 +34,7 @@ class CurrencyRate extends Model
         'buy_rate'    => 'float',
         'sell_rate'   => 'float',
         'date'        => 'datetime',
+        'status'      => 'boolean',
     ];
 
     public function getId(): int

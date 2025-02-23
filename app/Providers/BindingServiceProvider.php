@@ -9,6 +9,8 @@ use App\CacheRepositories\V1\Acl\RoleCacheRepository;
 use App\Contracts\Repositories\Acl\PermissionRepositoryContract;
 use App\Contracts\Repositories\Acl\RoleRepositoryContract;
 use App\Contracts\Repositories\Currency\CurrencyRepositoryContract;
+use App\Contracts\Repositories\Gas\GasRepositoryContract;
+use App\Contracts\Repositories\Product\ProductRepositoryContract;
 use App\Contracts\Repositories\User\ContactInformationRepositoryContract;
 use App\Contracts\Repositories\User\UserRepositoryContract;
 use App\Contracts\Requests\Acl\RoleSaveRequestContract;
@@ -21,6 +23,8 @@ use App\Contracts\Requests\User\UserDeactivateRequestContract;
 use App\Contracts\Services\Acl\PermissionServiceContract;
 use App\Contracts\Services\Acl\RoleServiceContract;
 use App\Contracts\Services\Currency\CurrencyServiceContract;
+use App\Contracts\Services\Gas\GasServiceContract;
+use App\Contracts\Services\Product\ProductServiceContract;
 use App\Contracts\Services\User\UserServiceContract;
 use App\Http\Requests\Api\V1\Acl\RoleSaveRequest;
 use App\Http\Requests\Api\V1\User\AttachPermissionsRequest;
@@ -32,11 +36,15 @@ use App\Http\Requests\Api\V1\User\UserDeactivateRequest;
 use App\Repositories\V1\Acl\PermissionRepository;
 use App\Repositories\V1\Acl\RoleRepository;
 use App\Repositories\V1\Currency\CurrencyRepository;
+use App\Repositories\V1\Gas\GasRepository;
+use App\Repositories\V1\Product\ProductRepository;
 use App\Repositories\V1\User\ContactInformationRepository;
 use App\Repositories\V1\User\UserRepository;
 use App\Services\V1\Acl\PermissionService;
 use App\Services\V1\Acl\RoleService;
 use App\Services\V1\Currency\CurrencyService;
+use App\Services\V1\Gas\GasService;
+use App\Services\V1\Products\ProductService;
 use App\Services\V1\User\UserService;
 use Illuminate\Support\ServiceProvider;
 
@@ -70,6 +78,16 @@ class BindingServiceProvider extends ServiceProvider
                 CurrencyRepository::class,
             ],
         ],
+        GasRepositoryContract::class                => [
+            'v1' => [
+                GasRepository::class,
+            ],
+        ],
+        ProductRepositoryContract::class            => [
+            'v1' => [
+                ProductRepository::class,
+            ],
+        ],
     ];
 
     private const SERVICES = [
@@ -91,8 +109,18 @@ class BindingServiceProvider extends ServiceProvider
         CurrencyServiceContract::class   => [
             'v1' => [
                 CurrencyService::class,
-            ]
-        ]
+            ],
+        ],
+        GasServiceContract::class        => [
+            'v1' => [
+                GasService::class,
+            ],
+        ],
+        ProductServiceContract::class    => [
+            'v1' => [
+                ProductService::class,
+            ],
+        ],
     ];
 
     private const REQUESTS = [

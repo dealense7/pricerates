@@ -50,19 +50,19 @@ class GlovoParser extends Parser
 
     protected function getPrice(array $item): int
     {
-        return ((float) Arr::get($item, 'data.price')) * 100;
+        return intval(((float) Arr::get($item, 'data.price')) * 100);
     }
 
     protected function getBarCode(array $item): string
     {
-        return (int) filter_var(Arr::get($item, 'data.externalId'), FILTER_SANITIZE_NUMBER_INT);
+        return filter_var(Arr::get($item, 'data.externalId'), FILTER_SANITIZE_NUMBER_INT);
     }
 
     protected function getBarCodeFromName(array $item): string
     {
         $array = explode('/', Arr::get($item, 'data.name', ''));
 
-        return (int) filter_var(end($array), FILTER_SANITIZE_NUMBER_INT);
+        return filter_var(end($array), FILTER_SANITIZE_NUMBER_INT);
     }
 
     protected function getBarCodeFromImage(array $item): ?string

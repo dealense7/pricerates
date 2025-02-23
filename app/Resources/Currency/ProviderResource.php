@@ -17,6 +17,7 @@ class ProviderResource extends JsonResource
         'status'   => 'status',
         'logo_url' => 'logoUrl',
     ];
+
     public function __construct(?Provider $resource)
     {
         $this->resource = $resource;

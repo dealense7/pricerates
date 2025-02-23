@@ -1,5 +1,5 @@
 <div class="border-b">
-    <div class="w-8/12 mx-auto">
+    <div class="w-10/12 sm:w-8/12 mx-auto">
         <div class="my-3 flex items-center justify-between">
             <div class="flex items-center">
                 <div class="w-11">

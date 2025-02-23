@@ -22,7 +22,7 @@ enum Category: int
     {
         return match ($this) {
             self::Alcohol    => 'ალკოჰოლი',
-            self::NonAlcohol => 'უალკკოჰოლო',
+            self::NonAlcohol => 'უალკოჰოლო',
             self::Grocery    => 'ბაკალეა',
             self::Dairy      => 'რძის ნაწარმი',
             self::Garden     => 'ბაღი',

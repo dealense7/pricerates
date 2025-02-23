@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace App\Models\Products;
 
 use App\Models\Model;
+use App\Models\Store\Store;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * @property int id
@@ -23,6 +25,7 @@ class Price extends Model
         'store_id',
         'original_price',
         'current_price',
+        'status',
     ];
     protected $casts    = [
         'item_id'        => 'int',
@@ -30,6 +33,7 @@ class Price extends Model
         'store_id'       => 'int',
         'original_price' => 'int',
         'current_price'  => 'int',
+        'status'         => 'boolean',
         'created_at'     => 'datetime',
     ];
 
@@ -61,5 +65,10 @@ class Price extends Model
     public function getCurrentPrice(): int
     {
         return $this->current_price;
+    }
+
+    public function store(): BelongsTo
+    {
+        return $this->belongsTo(Store::class, 'store_id');
     }
 }

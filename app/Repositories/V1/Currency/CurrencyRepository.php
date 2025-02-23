@@ -17,9 +17,9 @@ class CurrencyRepository extends Repository implements CurrencyRepositoryContrac
 
         $query = $model->newQuery()
             ->with(['provider', 'currency'])
-            ->whereDate('date', today());
+            ->where('status', true);
 
-        /** @var Collection $items */
+        /** @var \App\Support\Collection $items */
         $items = $query->get();
 
         return $items;
