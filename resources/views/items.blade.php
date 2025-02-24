@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="w-full">
-                {{$items->links()}}
+                {{$items->appends(request()->input())->links()}}
             </div>
         </div>
 

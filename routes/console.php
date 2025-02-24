@@ -6,3 +6,4 @@ use Illuminate\Support\Facades\Schedule;
 
 Schedule::command('app:fetch-gas-data')->everyFourHours();
 Schedule::command('app:fetch-currency-data')->everyFourHours();
+Schedule::command('app:product-parser')->dailyAt('10:00');
