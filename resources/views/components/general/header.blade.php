@@ -1,7 +1,7 @@
 <div class="border-b">
     <div class="w-10/12 sm:w-8/12 mx-auto">
         <div class="my-3 flex items-center justify-between">
-            <div class="flex items-center">
+            <a href="/" class="flex items-center">
                 <div class="w-11">
                     <img src="{{ Vite::asset('resources/imgs/logo.png') }}" alt="logo" class="object-contain w-full h-full">
                 </div>
@@ -9,7 +9,7 @@
                     <h1 class="font-bold text-gray-950">ფასები</h1>
                     <span class="font-normal text-gray-700"><small>ოპოვე უკეთეს ფასად</small></span>
                 </div>
-            </div>
+            </a>
             <div class="flex items-center">
                 <div class="w-11">
                     <img src="{{ Vite::asset('resources/imgs/bag.png') }}" alt="bag" class="object-contain w-full h-full">

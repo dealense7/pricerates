@@ -8,6 +8,7 @@ use App\Contracts\Repositories\Product\ProductRepositoryContract;
 use App\Contracts\Services\Product\ProductServiceContract;
 use App\Services\Service;
 use App\Support\Collection;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class ProductService extends Service implements ProductServiceContract
 {
@@ -16,6 +17,14 @@ class ProductService extends Service implements ProductServiceContract
     )
     {
         //
+    }
+
+    public function getItems(array $filters = []): LengthAwarePaginator
+    {
+        $result = $this->repository->getItems($filters);
+
+        $result->setCollection($this->mapItems(Collection::make($result->items())));
+        return $result;
     }
 
     public function getRandomCategoryItems(): Collection
@@ -36,9 +45,9 @@ class ProductService extends Service implements ProductServiceContract
         \Carbon\Carbon::setLocale('ka');
 
         $unitMapping = [
-            'pcs' => ['label' => 'X', 'class' => 'bg-green-600 rounded-sm'],
-            'g'   => ['label' => 'გრ', 'class' => 'bg-gray-600 rounded'],
-            'ml'  => ['label' => 'მლ', 'class' => 'bg-gray-600 rounded'],
+            'pcs' => ['label' => 'X',  'eng' => 'pcs'],
+            'g'   => ['label' => 'გრ', 'eng' => 'g'],
+            'ml'  => ['label' => 'მლ', 'eng' => 'ml'],
         ];
 
         return $items->transform(function ($item) use ($unitMapping) {

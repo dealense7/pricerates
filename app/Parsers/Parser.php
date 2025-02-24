@@ -5,13 +5,16 @@ declare(strict_types=1);
 namespace App\Parsers;
 
 use App\Enums\General\Category;
+use App\Models\General\File;
 use App\Models\Products\Item;
 use App\Models\Products\Price;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Storage;
 
 abstract class Parser
 {
-    public null | int $storeId = null;
+    public null|int $storeId = null;
 
     /**
      * @param array $items
@@ -22,11 +25,11 @@ abstract class Parser
         $data = [];
         foreach ($items as $item) {
             $barCode = $this->getBarCode($item);
-            if (! $this->validateBarCode(strlen($barCode))) {
+            if (!$this->validateBarCode(strlen($barCode))) {
                 $barCode = $this->getBarCodeFromName($item);
-                if (! $this->validateBarCode(strlen($barCode))) {
+                if (!$this->validateBarCode(strlen($barCode))) {
                     $barCode = $this->getBarCodeFromImage($item);
-                    if (is_null($barCode) || ! $this->validateBarCode(strlen($barCode))) {
+                    if (is_null($barCode) || !$this->validateBarCode(strlen($barCode))) {
                         continue;
                     }
                 }
@@ -112,6 +115,12 @@ abstract class Parser
 
     private function savePrice(int $productId, ItemDto $item): void
     {
+        (new Price())->newQuery()
+            ->where('item_id', $productId)
+            ->where('status', true)
+            ->where('provider_id', $item->providerId)
+            ->update(['status' => false]);
+
         $currentHour = now()->startOfHour()->format('Y-m-d H');
 
         (new Price())->newQuery()->updateOrInsert(
@@ -123,6 +132,7 @@ abstract class Parser
             ],
             [
                 'current_price' => $item->price,
+                'status'      => true,
             ],
         );
     }

@@ -15,7 +15,7 @@
           }
         }"
     >
-        <div class="w-full sm:w-8/12 mx-auto font-normal border-r border-l grid lg:grid-cols-5 xl:grid-cols-7 grid-cols-2 md:grid-cols-3  gap-1">
+        <div class="w-full sm:w-8/12 mx-auto font-normal border-r border-l grid lg:grid-cols-5 xl:grid-cols-7 grid-cols-2 md:grid-cols-3 gap-1">
             @foreach($popularItems as $index => $item)
                 <x-product.item :item="$item" :index="$index"/>
             @endforeach
@@ -45,11 +45,11 @@
         <div class="w-full sm:w-8/12 mx-auto font-normal border-r border-l flex flex-col">
             @foreach($randomCategoryItems as $category)
                 <div class="border-b">
-                    <div class="flex items-center justify-between">
-                        <div class="grid p-3">
+                    <div class="flex items-center px-3 py-1 justify-between">
+                        <div class="grid">
                             <h2 class="text-sm font-medium">{{$category->name}}</h2>
                         </div>
-                        <a href="/" class="grid p-3">
+                        <a href="/items?filters[categoryId]={{$category->id}}" class="grid">
                             <span class="text-xx">ყველას ნახვა</span>
                             <span class="text-xx mt-0.5 font-normal text-gray-600"><small>სულ: {{$category->products_count}}</small></span>
                         </a>

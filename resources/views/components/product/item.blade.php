@@ -17,16 +17,15 @@
             open = true
          "
     >
-        <div class="w-full h-48 relative bg-white shadow-sm rounded-sm p-5">
+        <div class="w-full h-48 relative bg-white shadow-sm rounded-sm p-5" x-data='{unitTypes: {"pcs": "bg-green-600 rounded-sm", "g":"bg-gray-600 rounded","ml":"bg-gray-600 rounded"}}'>
             <img src="{{ $item['image']}}" class="object-contain w-full h-full"/>
             <span class="absolute right-1 bottom-1 text-xs">
                 <small>{{ $item['prices'][0]['createdAt'] }}</small>
             </span>
 
-
-                        <span class="absolute left-1 font-medium bottom-1 text-sm {{ $item['unit']['class'] }} px-0.5 text-white">
-                            <small>{{ $item['unitAmount'] }} <small>{{ $item['unit']['label'] }}</small></small>
-                        </span>
+            <span class="absolute left-1 font-medium bottom-1 text-sm px-1 text-white" :class="unitTypes.{{$item['unit']['eng']}}">
+                <small>{{ $item['unitAmount'] }} <small>{{ $item['unit']['label'] }}</small></small>
+            </span>
         </div>
 
         <h3 class="my-1 text-xs font-bold text-gray-800" x-text="itemBrandName"></h3>
